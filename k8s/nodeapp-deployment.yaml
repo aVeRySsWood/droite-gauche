@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: nodeapp
-          image: gauche-droite-api:latest  # à tagger correctement si build local
-          imagePullPolicy: Never
+          image: mrfreeze36/droite-gauche:latest  # à tagger correctement si build local
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
           env:
